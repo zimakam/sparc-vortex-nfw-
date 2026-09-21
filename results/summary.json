@@ -1,0 +1,23 @@
+{
+  "n_galaxies": 171,
+  "vortex": {
+    "success_rate": 0.8304093567251462,
+    "n_ok": 142,
+    "median_chi2_dof": 1.1106404470982776,
+    "mean_chi2_dof": 1.9273847738853171,
+    "bic_sum": 8169.97939918911
+  },
+  "nfw": {
+    "success_rate": 0.5789473684210527,
+    "n_ok": 99,
+    "median_chi2_dof": 2.4035238245440484,
+    "mean_chi2_dof": 4.419815401839529,
+    "bic_sum": 14074.074680633761
+  },
+  "delta_bic": 5904.095281444651,
+  "head_to_head": {
+    "vortex_wins": 141,
+    "nfw_wins": 30
+  },
+  "elapsed_seconds": 8.16
+}

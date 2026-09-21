@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+data/*.mrt
+results/*.pdf
+.DS_Store
