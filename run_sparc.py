@@ -97,19 +97,26 @@ def fit(mode, r, vo, ve, vg, vd, vb):
                     best_c = c
                     best = [float(A), float(rc), float(ups)]
     if best is None: return None
-    for _ in range(20):
+    if mode == "vortex":
+        bounds = [(10.0, 500.0), (0.1, 20.0), (0.0, 2.0)]
+    else:
+        bounds = [(10.0, 500.0), (0.5, 100.0), (0.0, 2.0)]
+    step = [max(abs(best[k]) * 0.3, 1e-3) for k in range(3)]
+    for _ in range(200):
         improved = False
         for k in range(3):
-            step = max(abs(best[k]) * 0.1, 0.05)
             for s in (+1, -1):
                 trial = list(best)
-                trial[k] = max(0.0, trial[k] + s * step)
+                trial[k] = min(max(trial[k] + s * step[k], bounds[k][0]), bounds[k][1])
                 c = chi2(mode, r, vo, ve, vg, vd, vb, tuple(trial))
-                if c < best_c - 1e-6:
+                if c < best_c - 1e-7:
                     best = trial
                     best_c = c
                     improved = True
-        if not improved: break
+        if not improved:
+            step = [s * 0.5 for s in step]
+            if max(step) < 1e-6:
+                break
     N = len(r)
     dof = max(N - 3, 1)
     return {

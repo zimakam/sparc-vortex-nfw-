@@ -1,23 +1,23 @@
 {
   "n_galaxies": 171,
   "vortex": {
-    "success_rate": 0.8304093567251462,
-    "n_ok": 142,
-    "median_chi2_dof": 1.1106404470982776,
-    "mean_chi2_dof": 1.9273847738853171,
-    "bic_sum": 8169.97939918911
+    "success_rate": 0.9122807017543859,
+    "n_ok": 156,
+    "median_chi2_dof": 0.5522455045005538,
+    "mean_chi2_dof": 1.0586801259223242,
+    "bic_sum": 5436.96198139226
   },
   "nfw": {
-    "success_rate": 0.5789473684210527,
-    "n_ok": 99,
-    "median_chi2_dof": 2.4035238245440484,
-    "mean_chi2_dof": 4.419815401839529,
-    "bic_sum": 14074.074680633761
+    "success_rate": 0.8011695906432749,
+    "n_ok": 137,
+    "median_chi2_dof": 0.9755818877943325,
+    "mean_chi2_dof": 2.385959544383025,
+    "bic_sum": 9633.309389539867
   },
-  "delta_bic": 5904.095281444651,
+  "delta_bic": 4196.347408147607,
   "head_to_head": {
-    "vortex_wins": 141,
-    "nfw_wins": 30
+    "vortex_wins": 134,
+    "nfw_wins": 37
   },
-  "elapsed_seconds": 8.16
+  "elapsed_seconds": 36.7
 }
