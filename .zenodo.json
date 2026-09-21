@@ -1,0 +1,40 @@
+{
+  "title": "SPARC VORTEX vs NFW: analysis code and results",
+  "description": "Reproducible analysis comparing a vortex-based dark matter halo profile against the standard NFW profile on 171 SPARC galaxies. Key results: VORTEX success rate 83.0% vs NFW 57.9% (chi2/dof < 3); median chi2/dof 1.11 vs 2.40; aggregate BIC difference Delta BIC = +5904 in favour of VORTEX, with 95% bootstrap CI [+3135, +9397] and P(Delta BIC > 0) = 1.0000; head-to-head BIC wins 141/171.",
+  "creators": [
+    {
+      "name": "Ziyavutdinov, Magomed K.",
+      "affiliation": "Independent researcher",
+      "orcid": ""
+    }
+  ],
+  "license": {
+    "id": "MIT"
+  },
+  "keywords": [
+    "dark matter",
+    "galaxy rotation curves",
+    "SPARC catalogue",
+    "vortex profile",
+    "NFW profile",
+    "Bayesian model comparison",
+    "BIC",
+    "astrophysics"
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "communities": [],
+  "related_identifiers": [
+    {
+      "identifier": "http://astroweb.cwru.edu/SPARC/",
+      "relation": "isDerivedFrom",
+      "resource_type": "dataset"
+    }
+  ],
+  "references": [
+    "Lelli F., McGaugh S. S., Schombert J. M., 2016, AJ, 152, 157",
+    "McGaugh S. S., Lelli F., Schombert J. M., 2016, PRL, 117, 201101",
+    "Navarro J. F., Frenk C. S., White S. D. M., 1996, ApJ, 462, 563"
+  ]
+}
